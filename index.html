@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="side01">
+            <img src="assets/images/undraw_cat_epte.svg" alt="">
+        </div>
+
+        <div class="side02">
+            <form>
+                <div class="form-header">
+                    <h1>Cadastre-se</h1>
+                    <a href=""><button>Entrar</button></a>
+                </div>
+
+                <div class="input-body">
+                    <div class="input">
+                        <label for="f_nome">Primeiro nome</label>
+                        <input type="text" name="" id="f_nome" placeholder="Digite seu primeiro nome">
+                    </div>
+                    <div class="input">
+                        <label for="f_sobrenome">Sobrenome</label>
+                        <input type="text" name="" id="f_sobrenome" placeholder="Digite seu sobrenome">
+                    </div>
+                    <div class="input">
+                        <label for="f_email">E-mail</label>
+                        <input type="email" name="" id="f_email" placeholder="Digite seu email">
+                    </div>
+                    <div class="input">
+                        <label for="f_celular">Celular</label>
+                        <input type="tel" name="" id="f_celular" placeholder="(xx) xxxx-xxxx">
+                    </div>
+                    <div class="input">
+                        <label for="f_senha">Senha</label>
+                        <input type="password" name="" id="f_senha" placeholder="Digite sua senha">
+                    </div>
+                    <div class="input password">
+                        <label for="f_confirm-senha">Confirme sua senha</label>
+                        <input type="password" name="" id="f_confirm-senha" placeholder="Digite sua senha novamente">
+                    </div>
+                </div>
+
+                <div class="gender">
+                    <div class="tittle-gender">
+                        <h4>Gênero</h4>
+                    </div>
+                    <div class="input-gender-all">
+                        <div class="input-gender">
+                            <input type="radio" name="radsex" id="fem">
+                            <label for="fem">Feminino</label>
+                        </div>
+                        <div class="input-gender">
+                            <input type="radio" name="radsex" id="masc">
+                            <label for="masc">Masculino</label>
+                        </div>
+                        <div class="input-gender">
+                            <input type="radio" name="radsex" id="outro">
+                            <label for="outro">Outro</label>
+                        </div>
+                        <div class="input-gender">
+                            <input type="radio" name="radsex" id="npd">
+                            <label for="npd">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit-button">
+                    <input type="submit" value="Continuar">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

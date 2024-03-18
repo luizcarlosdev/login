@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+:root{
+    --color0:#f1dbb7;
+    --color1:#6b62f8;
+    --color2:#6a61f5;
+    --color3:#d8d8d8;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body,html{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#b4b5f4;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+}
+
+.container .side01{
+    width: 50%;
+    height: 100%;
+    background-color: var(--color0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .side01 img{
+    width: 31rem;
+}
+
+.container .side02{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.container .form-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .form-header h1{
+    position: relative;
+}
+
+.container .form-header h1:after{
+    content: " ";
+    width: 100px;
+    height: 3px;
+    background-color: #6a61f5;
+    bottom: 0px;
+    left: 0px;
+    margin: -5px 0px;
+    position: absolute;
+}
+
+.container .form-header button{
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: var(--color2);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.container .input-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: left;
+    column-gap: 20px;
+    row-gap: 25px;
+}
+
+.container .input-body .input{
+   display: flex;
+   flex-direction: column;
+   align-items: left; 
+   justify-content: center;
+   row-gap: 10px;
+}
+
+.container .input-body .input label{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.container .input-body .input input{
+    border: none;
+    border-radius: 5px;
+    padding: 14px 14px;
+    box-shadow: 0px 0px 2px 2px #00000011;
+}
+
+.container .input-body .input input::placeholder{
+    color: #a4a19d;
+}
+
+.container .gender{
+   display: grid;
+   row-gap: 13px;
+}
+
+.container .gender .input-gender-all{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.container .submit-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .submit-button input[type=submit]{
+    width: 100%;
+    padding: 11px 10px;
+    background-color: var(--color1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media (max-width:1024px){
+    .container{
+        height: fit-content;
+        width: 340px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: left;
+    }
+
+    .container form{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: left;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    .container .side01{
+        display: none;
+    }
+
+    .container .side02{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container .form-header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+        row-gap: 12px;
+    }
+
+    .container .form-header h1:after{
+        width: 0px;
+    }
+
+    .container .input-body{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: left;
+        overflow-y: scroll;
+        height: 150px;
+        width: 80%;
+        padding: 15px 2px;
+    }
+
+    .container .gender .input-gender-all{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+        place-items: left;
+    }
+}
